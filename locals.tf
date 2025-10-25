@@ -5,6 +5,6 @@ locals {
         Environment = var.environment
         Terraform = true
     }
-    sliced_list = slice(data.aws_availability_zones.az.names,0,2) 
-    az_names = [for item in local.sliced_list : trimprefix(item, "us-east-")]
+    az_names = slice(data.aws_availability_zones.az.names,0,2) 
+    #az_names = [for item in local.sliced_list : trimprefix(item, "us-east-")]
 }

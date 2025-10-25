@@ -76,3 +76,8 @@ variable "nat_tags" {
   type = map
   default = {}
 }
+
+variable "is_vpc_peering_required" {
+  type = bool
+  default = true
+}

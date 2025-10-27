@@ -39,3 +39,11 @@ This module creates the following resources
 * eip_tags - (Optional). User can supply the tags for elastic ip(eip).
 * nat_tags - (Optional). User can supply the tags for NAT gateway.
 * is_vpc_peering_required - (Optional). dafault to true.
+
+
+### Outputs
+
+* vpc_id - VPC ID of the VPC created.
+* public_subent_ids - Public subnet ids of the VPC created.
+* private_subent_ids - Private subnet ids of the VPC created.
+* database_subent_ids - Database subnet ids of the VPC created.

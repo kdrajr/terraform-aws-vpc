@@ -7,7 +7,7 @@ variable "instance_tenancy" {
   default = "default"
 }
 
-variable "project" {
+variable "project_name" {
   type = string
 }
 
